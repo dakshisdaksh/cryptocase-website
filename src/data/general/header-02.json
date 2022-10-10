@@ -1,18 +1,11 @@
 {
-    "id": "header-data-2",
+    "id": "header-data-02",
     "logo": [
         {
-            "src": "/images/logo/logo-white.png"
+            "src": "/images/logo/cryptocase.png"
         },
         {
-            "src": "/images/logo/logo-dark.png"
+            "src": "/images/logo/cryptocase.png"
         }
-    ],
-    "author": {
-        "name": "Mark Jordan",
-        "image": {
-            "src": "/images/client/testimonial-1.jpg"
-        },
-        "balance": "12ETH"
-    }
+    ]
 }

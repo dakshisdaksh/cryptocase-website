@@ -19,11 +19,9 @@ const ContactTopArea = ({ space, className }) => (
                     data-sal-duration="800"
                 >
                     <div className="section-title mb--30 text-center">
-                        <h2 className="title">Quick Contact Address</h2>
+                        <h2 className="title">Contact Us</h2>
                         <p className="description">
-                            There are many variations of passages of Lorem Ipsum
-                            available, <br /> but the majority have suffered
-                            alteration.
+                            For any queries or grievances, <br /> contact us through the following means.
                         </p>
                     </div>
                 </div>
@@ -36,9 +34,9 @@ const ContactTopArea = ({ space, className }) => (
                     data-sal-duration="800"
                 >
                     <AddressBox
-                        icon="feather-headphones"
-                        title="Contact Phone Number"
-                        phoneNumbers={["+444 555 666 777", "+222 222 222 333"]}
+                        icon="feather-phone"
+                        title="Phone"
+                        phoneNumbers={["+91 7895292559", "https://wa.me/917895292559"]}
                     />
                 </div>
                 <div
@@ -49,8 +47,8 @@ const ContactTopArea = ({ space, className }) => (
                 >
                     <AddressBox
                         icon="feather-mail"
-                        title="Our Email Address"
-                        emails={["admin@gmail.com", "example@gmail.com"]}
+                        title="Email"
+                        emails={["daksh@cryptocasehq.com ", "shrish@cryptocasehq.com"]}
                     />
                 </div>
                 <div
@@ -61,8 +59,10 @@ const ContactTopArea = ({ space, className }) => (
                 >
                     <AddressBox
                         icon="feather-map-pin"
-                        title="Our Location"
-                        address="5678 Bangla Main Road, cities 580 <br> GBnagla, example 54786"
+                        title="Location"
+                        address="Company Corporate Office:<br /> 
+                        Airdash Tech Pvt Ltd<br />
+                        Wework, Enam Sambhav, C 20, Block G, Bandra Kurla Complex, Mumbai, Maharashtra, 400051."
                     />
                 </div>
             </div>

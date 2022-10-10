@@ -3,8 +3,6 @@ import clsx from "clsx";
 import LogoWidget from "@widgets/logo-widget";
 import NewsletterWidget from "@widgets/newsletter-widget";
 import QuicklinkWidget from "@widgets/quicklink-widget";
-import InformationWidget from "@widgets/information-widget";
-import SoldOutWidget from "@widgets/sold-out-widget";
 import FooterLinkWidget from "@widgets/footer-link-widget";
 import SocialWidget from "@widgets/social-widget";
 
@@ -34,19 +32,17 @@ const Footer = ({ space, className }) => (
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_mobile--40">
+                        
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
                         <QuicklinkWidget
                             data={footerData["quicklink-widget"]}
                         />
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <InformationWidget
-                            data={footerData["information-widget"]}
-                        />
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        <SoldOutWidget data={footerData["soldout-widget"]} />
+                        
                     </div>
                 </div>
             </div>

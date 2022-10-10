@@ -8,33 +8,21 @@
     "socials": [
         {
             "id": 1,
-            "icon": "feather-facebook",
-            "link": "https://facebook.com",
-            "title": "Facebook"
-        },
-        {
-            "id": 2,
             "icon": "feather-twitter",
-            "link": "https://twitter.com",
+            "link": "https://twitter.com/cryptocase_hq",
             "title": "Twitter"
         },
         {
-            "id": 3,
+            "id": 2,
             "icon": "feather-instagram",
-            "link": "https://instagram.com",
+            "link": "https://instagram.com/https://www.instagram.com/cryptocasehq/",
             "title": "Instagram"
         },
         {
-            "id": 4,
-            "icon": "feather-linkedin",
-            "link": "https://linkedin.com",
-            "title": "linkedin"
-        },
-        {
-            "id": 5,
-            "icon": "feather-mail",
-            "link": "https://mail.com",
-            "title": "mail"
+            "id": 3,
+            "icon": "feather-youtube",
+            "link": "https://youtube.com/channel/UCbTqW6ZcgCZ5G3TOmooVXZA",
+            "title": "youtube"
         }
     ]
 }

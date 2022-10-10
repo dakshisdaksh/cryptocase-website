@@ -4,8 +4,8 @@ import Header from "@layout/header/header-01";
 import Footer from "@layout/footer/footer-01";
 import Breadcrumb from "@components/breadcrumb";
 import ContactTopArea from "@containers/contact-top";
-import ContactFormArea from "@containers/contact-form";
 import GoogleMapArea from "@containers/google-map";
+import Particles from "@ui/particles";
 
 export async function getStaticProps() {
     return { props: { className: "template-color-1" } };
@@ -16,12 +16,12 @@ const Contact = () => (
         <SEO pageTitle="Contact" />
         <Header />
         <main id="main-content">
+            <Particles />
             <Breadcrumb
-                pageTitle="Contact With Us"
-                currentPage="Contact With Us"
+                pageTitle="Contact Us"
+                currentPage="Contact Us"
             />
             <ContactTopArea />
-            <ContactFormArea />
             <GoogleMapArea />
         </main>
         <Footer />

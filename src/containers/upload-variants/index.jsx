@@ -14,11 +14,9 @@ const UploadVariants = ({ className, space }) => (
         <div className="container">
             <div className="row">
                 <div className="upload-variant-title-wrapper">
-                    <h3 className="title text-center">Upload Variants</h3>
+                    <h3 className="title text-center">Download the Mudrex App</h3>
                     <p className="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ducimus inventore, officiis. Alias aspernatur
-                        laboriosam ratione! Doloremque ipsa nesciunt sed!
+                        Scan QR code to dowanload the app or click on the links below 
                     </p>
                 </div>
             </div>
@@ -27,20 +25,20 @@ const UploadVariants = ({ className, space }) => (
                     <div className="upload-variant-wrapper">
                         <div className="variant-preview">
                             <Image
-                                src="/images/upload-variants/single.jpg"
+                                src="/images/qr_android.png"
                                 alt="nuron-single"
-                                width={495}
-                                height={417}
+                                width={440}
+                                height={400}
                                 layout="responsive"
                             />
                         </div>
                         <Button
-                            path="/create"
+                            path=""
                             size="medium"
                             fullwidth
                             className="mt--20"
                         >
-                            Create Single
+                            <img src="/images/google-play.png" width={"30em"} height="fit-content" /> Get it on Google Play
                         </Button>
                     </div>
                 </div>
@@ -48,20 +46,20 @@ const UploadVariants = ({ className, space }) => (
                     <div className="upload-variant-wrapper">
                         <div className="variant-preview">
                             <Image
-                                src="/images/upload-variants/multiple.jpg"
+                                src="/images/qr_android.png"
                                 alt="nuron-single"
-                                width={495}
-                                height={417}
+                                width={440}
+                                height={400}
                                 layout="responsive"
                             />
                         </div>
                         <Button
-                            path="/create"
+                            path=""
                             size="medium"
                             fullwidth
                             className="mt--20"
                         >
-                            Create Multiple
+                            <img src="/images/apple.png" width={"30em"} height="fit-content" /> Available on the App Store
                         </Button>
                     </div>
                 </div>

@@ -39,7 +39,7 @@ const HeroArea = ({ data }) => (
                                     data-sal-duration="800"
                                     key={id}
                                 >
-                                    {content}
+                                    <img src="/images/google-play.png" width={"30em"} height="fit-content" /> {content}
                                 </Button>
                             ))}
                         </div>

@@ -52,7 +52,6 @@ const AboutArea = ({ space, className, data }) => (
                                     className="mt_dec--50 widge-wrapper rbt-sticky-top-adjust"
                                     title={data.items[0].title}
                                     desc={data.items[0].description}
-                                    path={data.items[0].path}
                                 />
                             </Sticky>
                         </div>
@@ -64,7 +63,7 @@ const AboutArea = ({ space, className, data }) => (
                             className="transparent-bg"
                             title={data.items[1].title}
                             desc={data.items[1].description}
-                            path={data.items[1].path}
+                            
                         />
                     </div>
                 )}

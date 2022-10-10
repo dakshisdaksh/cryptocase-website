@@ -7,18 +7,15 @@ import { ImageType } from "@utils/types";
 const BlogCard = ({
     className,
     title,
-    slug,
-    timeToRead,
     category,
     image,
-    rootPage,
     ...rest
 }) => (
     <div className={clsx("rn-blog", className)} {...rest}>
         <div className="inner">
             {image?.src && (
                 <div className="thumbnail">
-                    <Anchor path={`${rootPage}/${slug}`}>
+                    <Anchor path="/about">
                         <Image
                             src={image.src}
                             alt={image?.alt || "Personal Portfolio Images"}
@@ -31,19 +28,14 @@ const BlogCard = ({
             <div className="content">
                 <div className="category-info">
                     <div className="category-list">
-                        <Anchor path={`${rootPage}/category/${category.slug}`}>
+                        <Anchor path="/about">
                             {category.title}
                         </Anchor>
                     </div>
-                    <div className="meta">
-                        <span>
-                            <i className="feather-clock" /> {timeToRead} min
-                            read
-                        </span>
-                    </div>
+                    
                 </div>
                 <h4 className="title">
-                    <Anchor path={`${rootPage}/${slug}`}>
+                    <Anchor path="/about">
                         {title}
                         <i className="feather-arrow-up-right" />
                     </Anchor>

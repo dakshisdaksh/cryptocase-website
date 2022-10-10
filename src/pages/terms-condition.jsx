@@ -11,12 +11,12 @@ export async function getStaticProps() {
 
 const TermsAndConditions = () => (
     <Wrapper>
-        <SEO pageTitle="Terms & Condition" />
+        <SEO pageTitle="Terms & Conditions" />
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Terms & Condition"
-                currentPage="Terms & Condition"
+                pageTitle="Cryptocase"
+                currentPage="Terms & Conditions"
             />
             <TermsAndConditionsArea />
         </main>

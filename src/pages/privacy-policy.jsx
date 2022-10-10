@@ -15,8 +15,8 @@ const PrivacyPolicy = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Follow Privacy Policy"
-                currentPage="Follow Privacy Policy"
+                pageTitle="Cryptocase"
+                currentPage="Privacy Policy"
             />
             <PrivacyPolicyArea />
         </main>

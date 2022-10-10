@@ -3,128 +3,43 @@
     "logo-widget": {
         "logo": [
             {
-                "src": "/images/logo/logo-white.png",
+                "src": "/images/logo/cryptocase.png",
                 "alt": "logo"
             }
         ],
-        "text": "Created with the collaboration of over 60 of the world's best Nuron Artists."
+        "text": "Cryptocase - Investing in Crypto, minus the risk"
     },
     "newsletter-widget": {
-        "title": "Get The Latest Nuron Updates",
-        "note": "Email is safe. We don't spam."
+        "title": "Get the latest Cryptocase updates",
+        "note": "We don't spam :p"
     },
     "quicklink-widget": {
-        "title": "Nuron",
+        "title": "Links",
         "menu": [
             {
                 "id": 1,
-                "text": "Protocol Explore",
-                "path": "/explore-01"
+                "text": "Home",
+                "path": "/"
             },
             {
                 "id": 2,
-                "text": "System Token",
-                "path": "/about"
+                "text": "Start Investing",
+                "path": "/upload-variants"
             },
             {
                 "id": 3,
-                "text": "Otimize Time",
-                "path": "/about"
-            },
-            {
-                "id": 4,
-                "text": "Visual Checking",
-                "path": "/about"
-            },
-            {
-                "id": 5,
-                "text": "Fadeup System",
-                "path": "/blog"
-            },
-            {
-                "id": 6,
-                "text": "Activity Log",
-                "path": "/activity"
-            },
-            {
-                "id": 7,
-                "text": "System Auto Since",
-                "path": "/blog"
-            }
-        ]
-    },
-    "information-widget": {
-        "title": "Information",
-        "menu": [
-            {
-                "id": 1,
-                "text": "Market Explore",
-                "path": "/explore-01"
-            },
-            {
-                "id": 2,
-                "text": "Ready Token",
-                "path": "/about"
-            },
-            {
-                "id": 3,
-                "text": "Otimize Time",
-                "path": "/about"
-            },
-            {
-                "id": 4,
-                "text": "Main Option",
-                "path": "/about"
-            },
-            {
-                "id": 5,
-                "text": "Blog Grid",
-                "path": "/blog"
-            },
-            {
-                "id": 6,
                 "text": "About Us",
                 "path": "/about"
             },
             {
-                "id": 7,
-                "text": "Fix Bug",
-                "path": "/blog"
-            }
-        ]
-    },
-    "soldout-widget": {
-        "title": "Recent Sold Out",
-        "products": [
-            {
-                "id": 1,
-                "title": "#21 The Wonder",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.244wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-01.jpg"
-                }
+                "id": 4,
+                "text": "Contact Us",
+                "path": "/contact"
             },
             {
-                "id": 2,
-                "title": "Diamond Dog",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.022wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-02.jpg"
-                }
-            },
-            {
-                "id": 3,
-                "title": "Morgan11",
-                "path": "/product",
-                "highestBid": "Highest bid 1/20",
-                "price": "0.892wETH",
-                "image": {
-                    "src": "/images/portfolio/portfolio-03.jpg"
-                }
+                "id": 5,
+                "text": "Support/FAQ",
+                "path": "/support"
             }
         ]
     },
@@ -132,7 +47,7 @@
         "menu": [
             {
                 "id": 1,
-                "text": "Terms",
+                "text": "Terms & Conditions",
                 "path": "/terms-condition"
             },
             {
@@ -142,5 +57,5 @@
             }
         ]
     },
-    "copyright_text": "©2022 Nuron, Inc. All rights reserved"
+    "copyright_text": "Made with ❤ by Cryptocase"
 }
