@@ -2,10 +2,10 @@
     "id": "header-data-01",
     "logo": [
         {
-            "src": "/images/logo/cryptocase.png"
+            "src": "/logo-dark.png"
         },
         {
-            "src": "/images/logo/cryptocase.png"
+            "src": "/logo-light.png"
         }
     ]
 }

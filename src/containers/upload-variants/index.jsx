@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "@ui/button";
+import Particles from "@ui/particles";
 
 const UploadVariants = ({ className, space }) => (
     <div
@@ -11,6 +12,7 @@ const UploadVariants = ({ className, space }) => (
             className
         )}
     >
+        <Particles />
         <div className="container">
             <div className="row">
                 <div className="upload-variant-title-wrapper">

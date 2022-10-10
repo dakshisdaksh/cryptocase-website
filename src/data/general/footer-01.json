@@ -3,7 +3,11 @@
     "logo-widget": {
         "logo": [
             {
-                "src": "/images/logo/cryptocase.png",
+                "src": "/logo-dark.png",
+                "alt": "logo"
+            },
+            {
+                "src": "/logo-light.png",
                 "alt": "logo"
             }
         ],
