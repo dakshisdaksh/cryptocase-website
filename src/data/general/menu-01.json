@@ -12,40 +12,12 @@
     },
     {
         "id": 3,
-        "text": "Support/FAQ",
-        "path": "/support"
+        "text": "Contact Us",
+        "path": "/contact"
     },
     {
         "id": 4,
-        "text": "Start Investing",
-        "path": "/upload-variants",
-        "megamenu": [
-            {
-                "id": 1,
-                "submenu": [
-                    {
-                        
-                    }
-                ]
-            },
-            {
-                "id": 2,
-                "submenu": [
-                    {
-                        "id": 12,
-                        "text": "Download the Mudrex App",
-                        "description":"Scan QR code to dowanload the app or click on the links below",
-                        "image": "/images/qr_android",
-                        "path": "/",
-                        "icon": "feather-play"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "text": "Contact Us",
-        "path": "/contact"
-    }
+        "text": "FAQ",
+        "path": "/support"
+    }    
 ]

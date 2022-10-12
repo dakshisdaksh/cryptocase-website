@@ -27,22 +27,17 @@
             },
             {
                 "id": 2,
-                "text": "Start Investing",
-                "path": "/upload-variants"
-            },
-            {
-                "id": 3,
                 "text": "About Us",
                 "path": "/about"
             },
             {
-                "id": 4,
+                "id": 3,
                 "text": "Contact Us",
                 "path": "/contact"
             },
             {
-                "id": 5,
-                "text": "Support/FAQ",
+                "id": 4,
+                "text": "FAQ",
                 "path": "/support"
             }
         ]

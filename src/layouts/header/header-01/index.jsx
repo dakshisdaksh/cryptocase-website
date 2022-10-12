@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import Logo from "@components/logo";
@@ -6,12 +7,19 @@ import MobileMenu from "@components/menu/mobile-menu";
 import ColorSwitcher from "@components/color-switcher";
 import BurgerButton from "@ui/burger-button";
 import { useOffcanvas, useSticky } from "@hooks";
+import Button from "@ui/button";
+import PlaceBidModal from "@components/modals/placebid-modal";
 import headerData from "../../../data/general/header-01.json";
 import menuData from "../../../data/general/menu-01.json";
 
 const Header = ({ className }) => {
     const sticky = useSticky();
-    const { offcanvas, offcanvasHandler } = useOffcanvas();    
+    const { offcanvas, offcanvasHandler } = useOffcanvas();
+
+    const [showBidModal, setShowBidModal] = useState(false);
+    const handleBidModal = () => {
+        setShowBidModal((prev) => !prev);
+    };
 
     return (
         <>
@@ -35,12 +43,31 @@ const Header = ({ className }) => {
                                 </nav>
                             </div>
                         </div>
-                        <div className="header-right">
+                        <div
+                            className="header-right"
+                            style={{ marginRight: "2em" }}
+                        >
                             <div className="setting-option mobile-menu-bar d-block d-xl-none">
                                 <div className="hamberger">
                                     <BurgerButton onClick={offcanvasHandler} />
                                 </div>
                             </div>
+                            <div className="setting-option header-btn">
+                                <div className="icon-box">
+                                    <Button
+                                        color="primary-alta"
+                                        className="connectBtn"
+                                        size="small"
+                                        onClick={handleBidModal}
+                                    >
+                                        Invest Now
+                                    </Button>
+                                </div>
+                            </div>
+                            <PlaceBidModal
+                                show={showBidModal}
+                                handleModal={handleBidModal}
+                            />
                             <div
                                 id="my_switcher"
                                 className="setting-option my_switcher"

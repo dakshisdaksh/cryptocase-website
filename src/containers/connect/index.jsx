@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
-import Image from "next/image";
-import Wallet from "@components/wallet";
-import Anchor from "@ui/anchor";
 
 const ConnectArea = ({ className, space }) => (
     <div
@@ -20,23 +17,10 @@ const ConnectArea = ({ className, space }) => (
                     data-sal-delay="150"
                     data-sal-duration="800"
                 >
-                    <h3 className="connect-title">Connect your wallet</h3>
-                    <p className="connect-td">
-                        Connect with one of available wallet providers or create
-                        a new wallet.{" "}
-                        <Anchor path="/collection">What is a wallet?</Anchor>
-                    </p>
-                </div>
-                <div
-                    className="col-lg-6"
-                    data-sal="slide-up"
-                    data-sal-delay="200"
-                    data-sal-duration="800"
-                >
-                    <p className="wallet-bootm-disc">
-                        We do not own your private keys and cannot access your
-                        funds without your confirmation.
-                    </p>
+                    <h1 className="connect-title">
+                        Get Started in 3 Simple Steps
+                    </h1>
+                    <br />
                 </div>
             </div>
             <div className="row g-5">
@@ -46,115 +30,141 @@ const ConnectArea = ({ className, space }) => (
                     data-sal-delay="150"
                     data-sal-duration="500"
                 >
-                    <div className="connect-thumbnail">
-                        <div className="left-image">
-                            <Image
-                                src="/images/connect/connect-01.jpg"
-                                alt="Nft_Profile"
-                                width={670}
-                                height={576}
-                            />
+                    <div>
+                        <div>
+                            <center>
+                                <img
+                                    src="/images/phone.png"
+                                    alt="feature phone"
+                                    width={370}
+                                    height={650}
+                                    style={{ opacity: 0.85 }}
+                                />
+                            </center>
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 justify-content-center">
                     <div className="row g-5">
                         <div
                             className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
                             data-sal="slide-up"
                             data-sal-delay="150"
                             data-sal-duration="800"
+                            style={{ width: "100%", marginTop: "15em" }}
                         >
-                            <Wallet
-                                title="Bitcollet"
-                                description="I throw myself down among the tall."
-                                path="/collection"
-                                icon="feather-cast"
-                            />
+                            <center>
+                                <p style={{ textAlign: "left" }}>
+                                    <a
+                                        style={{ color: "blue" }}
+                                        href="https://play.google.com/store/apps/details?id=app.cryptocase.cryptocase"
+                                    >
+                                        ANDROID APP AVAILABLE
+                                    </a>
+                                </p>
+                                <h2 style={{ textAlign: "left" }}>
+                                    Create an Account
+                                </h2>
+                                <p style={{ textAlign: "left" }}>
+                                    Download the app and add your name, phone,
+                                    email, and KYC details. Start investing in 2
+                                    minutes.
+                                </p>
+                            </center>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row g-5">
+                <div className="col-lg-6 justify-content-center">
+                    <div className="row g-5">
                         <div
                             className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
                             data-sal="slide-up"
                             data-sal-delay="150"
                             data-sal-duration="800"
+                            style={{ width: "100%", marginTop: "15em" }}
                         >
-                            <Wallet
-                                title="GrasCash"
-                                description="This is a great deals For cash transfer"
-                                path="/collection"
-                                icon="feather-box"
-                                color="purple"
-                            />
+                            <center>
+                                <p style={{ color: "blue", textAlign: "left" }}>
+                                    WHAT ARE YOU BULISH ON?
+                                </p>
+                                <h2 style={{ textAlign: "left" }}>
+                                    Select your Cryptocase
+                                </h2>
+                                <p style={{ textAlign: "left" }}>
+                                    Select a basket of coins best suited to your
+                                    risk tolerance. Diversify your portfolio to
+                                    increase returns.
+                                </p>
+                            </center>
                         </div>
+                    </div>
+                </div>
+                <div
+                    className="col-lg-6"
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="500"
+                >
+                    <div>
+                        <div>
+                            <center>
+                                <img
+                                    src="/images/phone1.png"
+                                    alt="feature phone"
+                                    width={370}
+                                    height={650}
+                                    style={{ opacity: 0.85 }}
+                                />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row g-5">
+                <div
+                    className="col-lg-6"
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-duration="500"
+                >
+                    <div>
+                        <div>
+                            <center>
+                                <img
+                                    src="/images/phone2.png"
+                                    alt="feature phone"
+                                    width={370}
+                                    height={650}
+                                    style={{ opacity: 0.85 }}
+                                />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 justify-content-center">
+                    <div className="row g-5">
                         <div
                             className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
                             data-sal="slide-up"
                             data-sal-delay="150"
                             data-sal-duration="800"
+                            style={{ width: "100%", marginTop: "15em" }}
                         >
-                            <Wallet
-                                title="Import"
-                                description="Great oppertunity to reach them."
-                                path="/collection"
-                                icon="feather-award"
-                                color="pink"
-                            />
-                        </div>
-                        <div
-                            className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
-                            data-sal="slide-up"
-                            data-sal-delay="150"
-                            data-sal-duration="800"
-                        >
-                            <Wallet
-                                title="TiOne"
-                                description="Built your bigger offers then me"
-                                path="/collection"
-                                icon="feather-briefcase"
-                                color="yellow"
-                            />
-                        </div>
-                        <div
-                            className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
-                            data-sal="slide-up"
-                            data-sal-delay="150"
-                            data-sal-duration="800"
-                        >
-                            <Wallet
-                                title="Bkashes"
-                                description="Cash Transfer for easyest way you wast"
-                                path="/collection"
-                                icon="feather-command"
-                                color="green"
-                            />
-                        </div>
-                        <div
-                            className="col-xxl-4 col-lg-6 col-md-4 col-12 col-sm-6 col-12"
-                            data-sal="slide-up"
-                            data-sal-delay="150"
-                            data-sal-duration="800"
-                        >
-                            <Wallet
-                                title="Pyynle"
-                                description="More then myself down among the Cash."
-                                path="/collection"
-                                icon="feather-cpu"
-                                color="blue"
-                            />
-                        </div>
-                        <div
-                            className="col-12"
-                            data-sal="slide-up"
-                            data-sal-delay="150"
-                            data-sal-duration="800"
-                        >
-                            <Wallet
-                                title="YesCash"
-                                description="Biggest Bank transfer for best oppertunity"
-                                path="/collection"
-                                icon="feather-gitlab"
-                                color="red"
-                            />
+                            <center>
+                                <p style={{ textAlign: "left", color: "blue" }}>
+                                    BUY DIRECTLY WITH YOUR UPI ACCOUNT
+                                </p>
+                                <h2 style={{ textAlign: "left" }}>
+                                    Start investing seamlessly!
+                                </h2>
+                                <p style={{ textAlign: "left" }}>
+                                    Manage your investments by buying crypto
+                                    directly from your UPI account. No Wallet
+                                    integrations, No Confusion and No Hassle.
+                                </p>
+                            </center>
                         </div>
                     </div>
                 </div>

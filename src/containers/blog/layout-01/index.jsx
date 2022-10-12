@@ -1,63 +1,57 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import SectionTitle from "@components/section-title/layout-02";
-import Anchor from "@ui/anchor";
 import BlogCard from "@components/blog/blog-card";
 import { SectionTitleType } from "@utils/types";
 
 const BlogArea = ({ space, className, data }) => (
-    <div
-        className={clsx(
-            "rn-blog-area",
-            space === 1 && "rn-section-gapTop",
-            className
-        )}
-    >
-        <div className="container">
-            <div className="row mb--50 align-items-center">
-                <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                    {data?.section_title && (
-                        <SectionTitle
-                            className="mb--0"
-                            {...data.section_title}
-                        />
-                    )}
-                </div>
-                <div className="col-lg-6 col-md-6 col-sm-6 col-12 mt_mobile--15">
+    <center>
+        <div
+            className={clsx(
+                "rn-blog-area",
+                space === 1 && "rn-section-gapTop",
+                className
+            )}
+            style={{ width: "100%" }}
+        >
+            <div className="container" style={{ width: "100%" }}>
+                <div
+                    className="row mb--50 align-items-center"
+                    style={{ width: "100%" }}
+                >
                     <div
-                        className="view-more-btn text-start text-sm-end"
-                        data-sal-delay="150"
-                        data-sal="slide-up"
-                        data-sal-duration="800"
+                        className="col-lg-6 col-md-6 col-sm-6 col-12"
+                        style={{ width: "100%" }}
                     >
-                        <Anchor className="btn-transparent" path="/blog">
-                            VIEW ALL
-                            <i className="feather-arrow-right" />
-                        </Anchor>
+                        {data?.section_title && (
+                            <SectionTitle
+                                className="mb--0"
+                                {...data.section_title}
+                            />
+                        )}
                     </div>
                 </div>
-            </div>
-            <div className="row g-5">
-                {data?.posts?.map((post) => (
-                    <div
-                        className="col-xl-3 col-lg-4 col-md-6 col-12"
-                        data-sal="slide-up"
-                        data-sal-duration="800"
-                        data-sal-delay="150"
-                        key={post.slug}
-                    >
-                        <BlogCard
-                            title={post.title}
-                            slug={post.slug}
-                            category={post.category}
-                            timeToRead={post.timeToRead}
-                            image={post.image}
-                        />
-                    </div>
-                ))}
+                <div className="row g-5 justify-content-center">
+                    {data?.posts?.map((post) => (
+                        <div
+                            className="col-xl-3 col-lg-4 col-md-6 col-12"
+                            data-sal="slide-up"
+                            data-sal-duration="800"
+                            data-sal-delay="150"
+                            key={post.slug}
+                        >
+                            <BlogCard
+                                title={post.title}
+                                category={post.category}
+                                image={post.image}
+                                description={post.description}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-    </div>
+    </center>
 );
 
 BlogArea.propTypes = {

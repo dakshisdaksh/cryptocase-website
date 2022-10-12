@@ -6,6 +6,7 @@ import HeroArea from "@containers/hero/layout-01";
 import ServiceArea from "@containers/services/layout-01";
 import { normalizedData } from "@utils/methods";
 import Particles from "@ui/particles";
+import Connect from "./connect";
 
 // Demo Data
 import homepageData from "../data/homepages/home-01.json";
@@ -24,6 +25,7 @@ const Home = () => {
                 <Particles />
                 <HeroArea data={content["hero-section"]} />
                 <ServiceArea data={content["service-section"]} />
+                <Connect />
             </main>
             <Footer />
         </Wrapper>

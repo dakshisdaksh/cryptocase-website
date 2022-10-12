@@ -20,44 +20,37 @@ const PlaceBidModal = ({ show, handleModal }) => (
             </button>
         )}
         <Modal.Header>
-            <h3 className="modal-title">Place a bid</h3>
+            <h3 className="modal-title">
+                Download{" "}
+                <a
+                    className="cursor-pointer"
+                    href="https://play.google.com/store/apps/details?id=app.cryptocase.cryptocase"
+                >
+                    Cryptocase
+                </a>{" "}
+                App
+            </h3>
         </Modal.Header>
         <Modal.Body>
-            <p>You are about to purchase This Product Form Nuron</p>
+            <p style={{ fontSize: "1.1em" }}>
+                Scan QR to download the app or click on the link below
+            </p>
             <div className="placebid-form-box">
-                <h5 className="title">Your bid</h5>
                 <div className="bid-content">
                     <div className="bid-content-top">
-                        <div className="bid-content-left">
-                            <input id="value" type="text" name="value" />
-                            <span>wETH</span>
-                        </div>
-                    </div>
-
-                    <div className="bid-content-mid">
-                        <div className="bid-content-left">
-                            <span>Your Balance</span>
-                            <span>Service fee</span>
-                            <span>Total bid amount</span>
-                        </div>
-                        <div className="bid-content-right">
-                            <span>9578 wETH</span>
-                            <span>10 wETH</span>
-                            <span>9588 wETH</span>
+                        <div className="bid-content-mid" style={{ marginLeft: "6em" }}>
+                            <img src="/images/qr_android.png" alt="QR" />
                         </div>
                     </div>
                 </div>
                 <div className="bit-continue-button">
                     <Button path="/connect" size="medium" fullwidth>
-                        Place a bid
-                    </Button>
-                    <Button
-                        color="primary-alta"
-                        size="medium"
-                        className="mt--10"
-                        onClick={handleModal}
-                    >
-                        Cancel
+                        <img
+                            src="/images/google-play.png"
+                            width={"25em"}
+                            alt="Google Play"
+                        />{" "}
+                        Get it on Google Play
                     </Button>
                 </div>
             </div>

@@ -1,6 +1,4 @@
 import PropTypes from "prop-types";
-import Image from "next/image";
-import Button from "@ui/button";
 import { HeadingType, TextType, ButtonType, ImageType } from "@utils/types";
 
 const HeroArea = ({ data }) => (
@@ -14,6 +12,7 @@ const HeroArea = ({ data }) => (
                             data-sal-delay="200"
                             data-sal="slide-up"
                             data-sal-duration="800"
+                            style={{ color: "blue" }}
                         >
                             {data.headings[0].content}
                         </h2>
@@ -29,30 +28,15 @@ const HeroArea = ({ data }) => (
                             {text.content}
                         </p>
                     ))}
-                    {data?.buttons && (
-                        <div className="button-group">
-                            {data.buttons.map(({ content, id, ...btn }, i) => (
-                                <Button
-                                    {...btn}
-                                    data-sal-delay={400 + i * 100}
-                                    data-sal="slide-up"
-                                    data-sal-duration="800"
-                                    key={id}
-                                >
-                                    <img src="/images/google-play.png" width={"30em"} height="fit-content" /> {content}
-                                </Button>
-                            ))}
-                        </div>
-                    )}
+                    <a href="https://play.google.com/store/apps/details?id=app.cryptocase.cryptocase&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img width={"300em"} alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
                 </div>
                 <div className="col-lg-5 col-md-6 col-sm-12 offset-lg-1">
                     {data?.images?.[0]?.src && (
                         <div className="slider-thumbnail">
-                            <Image
-                                src={data.images[0].src}
-                                alt={data.images[0]?.alt || "Slider Images"}
-                                width={585}
-                                height={593}
+                            <iframe
+                                width="585"
+                                height="593"
+                                src="https://www.youtube.com/embed/sWaQBSKdSQA"
                             />
                         </div>
                     )}

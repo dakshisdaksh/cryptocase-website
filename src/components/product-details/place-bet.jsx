@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import Anchor from "@ui/anchor";
 import Button from "@ui/button";
-import PlaceBidModal from "@components/modals/placebid-modal";
+import PlaceBidModal from "@components/modals/placebid-modal";/
 import Countdown from "@ui/countdown/layout-02";
 import { ImageType } from "@utils/types";
 

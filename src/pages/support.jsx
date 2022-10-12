@@ -16,8 +16,8 @@ const Support = () => (
         <Header />
         <main id="main-content">
             <Breadcrumb
-                pageTitle="Support and FAQ"
-                currentPage="Support and FAQ"
+                pageTitle="Frequently Asked Questions"
+                currentPage="FAQ"
             />
             <ServiceArea />
             <SupportArea />

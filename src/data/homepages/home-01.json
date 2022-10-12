@@ -66,6 +66,17 @@
                             "src": "/images/icons/shape-1.png"
                         }
                     ]
+                },
+                {
+                    "id": 4,
+                    "title": "Built by Web 3.0 Enthusiasts",
+                    "path": "/",
+                    "description": "We're a group of Crypto Natives. We're fascinated by Web3 and believe throughly in our ability to find and curate amazing Web 3.0 projects.",
+                    "images": [
+                        {
+                            "src": "/images/icons/shape-3.png"
+                        }
+                    ]
                 }
             ]
         }

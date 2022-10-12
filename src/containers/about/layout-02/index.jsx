@@ -63,7 +63,6 @@ const AboutArea = ({ space, className, data }) => (
                             className="transparent-bg"
                             title={data.items[1].title}
                             desc={data.items[1].description}
-                            
                         />
                     </div>
                 )}

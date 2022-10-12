@@ -5,7 +5,6 @@ import TabContainer from "react-bootstrap/TabContainer";
 import TabPane from "react-bootstrap/TabPane";
 import Nav from "react-bootstrap/Nav";
 import Product from "@components/product/layout-02";
-import NotificationArea from "@containers/notification";
 import CreatorArea from "@containers/creator/layout-02";
 import {
     ProductType,

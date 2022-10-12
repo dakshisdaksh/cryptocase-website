@@ -7,11 +7,11 @@ import AboutArea from "@containers/about/layout-02";
 import FunfactArea from "@containers/funfact";
 import BlogArea from "@containers/blog/layout-01";
 import { normalizedData } from "@utils/methods";
+import Particles from "@ui/particles";
 import { getAllPosts } from "../lib/api";
 
 // Demo data
 import aboutData from "../data/innerpages/about.json";
-import Particles from "@ui/particles";
 
 const About = ({ posts }) => {
     const content = normalizedData(aboutData?.content || []);
@@ -38,6 +38,7 @@ export async function getStaticProps() {
         "image",
         "category",
         "timeToRead",
+        "description",
     ]);
 
     return {

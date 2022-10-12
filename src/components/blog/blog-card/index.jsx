@@ -8,6 +8,8 @@ const BlogCard = ({
     className,
     title,
     category,
+    // eslint-disable-next-line react/prop-types
+    description,
     image,
     ...rest
 }) => (
@@ -19,8 +21,8 @@ const BlogCard = ({
                         <Image
                             src={image.src}
                             alt={image?.alt || "Personal Portfolio Images"}
-                            width={image?.width ? image.width : 489}
-                            height={image?.height ? image.height : 366}
+                            width={image?.width ? image.width : 450}
+                            height={image?.height ? image.height : 390}
                         />
                     </Anchor>
                 </div>
@@ -28,15 +30,13 @@ const BlogCard = ({
             <div className="content">
                 <div className="category-info">
                     <div className="category-list">
-                        <Anchor path="/about">
-                            {category.title}
-                        </Anchor>
+                        <Anchor path="/about">{category.title}</Anchor>
                     </div>
-                    
                 </div>
                 <h4 className="title">
                     <Anchor path="/about">
                         {title}
+                        <p>{description}</p>
                         <i className="feather-arrow-up-right" />
                     </Anchor>
                 </h4>
