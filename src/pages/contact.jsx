@@ -17,10 +17,7 @@ const Contact = () => (
         <Header />
         <main id="main-content">
             <Particles />
-            <Breadcrumb
-                pageTitle="Contact Us"
-                currentPage="Contact Us"
-            />
+            <Breadcrumb pageTitle="Contact Us" currentPage="Contact Us" />
             <ContactTopArea />
             <GoogleMapArea />
         </main>

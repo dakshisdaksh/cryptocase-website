@@ -14,10 +14,7 @@ const PrivacyPolicy = () => (
         <SEO pageTitle="Privacy Policy" />
         <Header />
         <main id="main-content">
-            <Breadcrumb
-                pageTitle="Cryptocase"
-                currentPage="Privacy Policy"
-            />
+            <Breadcrumb pageTitle="Cryptocase" currentPage="Privacy Policy" />
             <PrivacyPolicyArea />
         </main>
         <Footer />
