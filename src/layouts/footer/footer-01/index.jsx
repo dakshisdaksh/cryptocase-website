@@ -40,10 +40,6 @@ const Footer = ({ space, className }) => (
                             data={footerData["quicklink-widget"]}
                         />
                     </div>
-
-                    <div className="col-lg-3 col-md-6 col-sm-6 col-12 mt_md--40 mt_sm--40">
-                        
-                    </div>
                 </div>
             </div>
         </div>

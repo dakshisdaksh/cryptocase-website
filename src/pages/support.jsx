@@ -19,6 +19,9 @@ const Support = () => (
                 pageTitle="Frequently Asked Questions"
                 currentPage="FAQ"
             />
+            <center>
+                <h1 style={{ marginBottom: "-2em" }}>Frequently Asked Questions</h1>
+            </center>
             <ServiceArea />
             <SupportArea />
         </main>
